@@ -1,33 +1,62 @@
-# Logs
-logs
-*.log
+# --- .NET/ASP.NET Core ---
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Entity Framework
+*.sqlite
+*.db
+*.mdf
+*.ldf
+
+# VS Code workspace
+.vscode/
+
+# --- Node/Vue/Vite ---
+node_modules/
+dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
+# Log-Dateien
+logs/
+*.log
+
+# Local .env
+.env
+.env.*
+
+# OS-Spezifisch
 .DS_Store
-dist
-dist-ssr
-coverage
-*.local
+Thumbs.db
 
-/cypress/videos/
-/cypress/screenshots/
+# --- Test/Build/Output ---
+coverage/
+build/
+*.tgz
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# IDE/Editor junk
+*.swp
+*.swo
 
-*.tsbuildinfo
+# --- Frontend/Vite spezifisch ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
 
-test-results/
-playwright-report/
+# --- Backend spezifisch ---
+backend/bin/
+backend/obj/
+backend/appsettings.Development.json
+backend/vinylify.db
+
+# --- General ---
+*.bak
+*.tmp
+*.temp

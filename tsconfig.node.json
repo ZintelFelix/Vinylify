@@ -6,7 +6,10 @@
     "cypress.config.*",
     "nightwatch.conf.*",
     "playwright.config.*",
-    "eslint.config.*"
+    "eslint.config.*",
+    "frontend/vite.config.ts",
+    "frontend/playwright.config.ts",
+    "frontend/vitest.config.ts"
   ],
   "compilerOptions": {
     "noEmit": true,

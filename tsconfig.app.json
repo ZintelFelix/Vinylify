@@ -1,12 +1,18 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  "exclude": ["src/**/__tests__/*"],
+  "include": ["env.d.ts", "frontend/src/**/*.ts", "frontend/src/**/*.vue"],
+  "exclude": ["frontend/src/**/__tests__/*"],
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["frontend/src/*"],
+      "@components/*": ["frontend/src/components/*"],
+      "@views/*": ["frontend/src/views/*"],
+      "@services/*": ["frontend/src/services/*"],
+      "@stores/*": ["frontend/src/stores/*"],
+      "@router/*": ["frontend/src/router/*"],
+      "@models/*": ["frontend/src/models/*"]
     }
   }
 }

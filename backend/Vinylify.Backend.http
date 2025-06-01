@@ -1,0 +1,6 @@
+@Vinylify.Backend_HostAddress = http://localhost:5096
+
+GET {{Vinylify.Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
